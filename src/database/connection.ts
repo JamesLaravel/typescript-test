@@ -10,6 +10,7 @@ export class DatabaseService {
 
   constructor() {}
 
+  //connection
   getConnection(): DataSource {
     if (DatabaseService.connection instanceof DataSource) {
       return DatabaseService.connection;
