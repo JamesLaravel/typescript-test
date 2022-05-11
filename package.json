@@ -6,13 +6,12 @@
   "author": "James",
   "license": "MIT",
   "scripts": {
-    "start:prod": "yarn clean && tsc && pm2 reload typescript-starter",
+    "start:prod": "node dist/index",
     "start:dev": "yarn clean && ts-node-dev ./src/index.ts --respawn --transpileOnly ",
     "dev": "yarn clean && ts-node-dev ./src/index.ts --respawn --transpileOnly ",
     "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "clean": "rm -rf dist && mkdir dist",
-    "start-reload": "yarn clean && tsc && pm2 reload typescript"
+    "clean": "rm -rf dist && mkdir dist"
   },
   "devDependencies": {
     "nodemon": "^2.0.13"
