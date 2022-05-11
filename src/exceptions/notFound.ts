@@ -2,6 +2,6 @@ import { Request, Response, NextFunction } from "express";
 
 export const notFound = (req: Request, res: Response, next: NextFunction) => {
   res.status(404).send({
-    message: "Route not found",
+    message: "Welcome to my moni backend task",
   });
 };
