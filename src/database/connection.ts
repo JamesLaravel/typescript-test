@@ -26,7 +26,7 @@ export class DatabaseService {
         entities: [__dirname + "/../**/*.entity.{js,ts}"],
         //migrations: ["dist/migration/**/*.ts"],
         logging: "all",
-        synchronize: true,
+        synchronize: false,
         ssl: {
           rejectUnauthorized: false,
         },
