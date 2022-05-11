@@ -35,9 +35,12 @@ export const startServer = async () => {
     app.use([errorHandler, notFound]);
   });
   const app = server.build();
+  const port = process.env.PORT || 8000;
+  app.listen(port,()=>{
 
-  app.listen(8000);
+    console.log(`Server started at http://localhost:${port}`);
+    console.log(`Press Ctrl+C to quit`);
+  });
 
-  console.log(`Server started at http://localhost:${8000}`);
-  console.log(`Press Ctrl+C to quit`);
+  
 };
