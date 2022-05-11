@@ -1,1 +1,1 @@
-web: npx npm run start:prod
+web: npx npm run start:dev
