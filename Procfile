@@ -1,1 +1,0 @@
-web: npx npm run start:dev
