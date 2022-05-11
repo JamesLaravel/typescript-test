@@ -27,9 +27,8 @@ export class DatabaseService {
         logging: "all",
         synchronize: true,
         ssl: {
-          rejectUnauthorized: true,
+          rejectUnauthorized: false,
         },
-       
       });
 
       DatabaseService.connection
