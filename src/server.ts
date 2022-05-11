@@ -35,7 +35,9 @@ export const startServer = async () => {
     app.use([errorHandler, notFound]);
   });
   const app = server.build();
+
   app.listen(8000);
+
   console.log(`Server started at http://localhost:${8000}`);
   console.log(`Press Ctrl+C to quit`);
 };

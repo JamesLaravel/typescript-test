@@ -3,7 +3,7 @@ import {
   STATUS,
   TRANTYPE,
   ACTIVITYTYPE,
-} from "./../../entities/transactions.entity";
+} from "../../entities/transactions.entity";
 import { jwt } from "../../constant/jwt";
 import { User } from "../../entities/user.entity";
 import { responseHandler } from "../../exceptions/responseHandler";

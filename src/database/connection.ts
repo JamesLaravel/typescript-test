@@ -26,6 +26,10 @@ export class DatabaseService {
         //migrations: ["dist/migration/**/*.ts"],
         logging: "all",
         synchronize: true,
+        ssl: {
+          rejectUnauthorized: true,
+        },
+       
       });
 
       DatabaseService.connection

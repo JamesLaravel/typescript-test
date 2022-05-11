@@ -5,7 +5,9 @@
   "username": "gnrgoyeribmhum",
   "password": "eb435ae1e0bc5b63e4b44ea308b4d92fc9b018beb8687721f22240f57d9e3142",
   "database": "d70295ihnqjdus",
-  "entities": ["src/**/*.entity{.ts,.js}"],
-  "migrations": ["src/migrations/**/*.js"],
-  "cli": { "entitiesDir": "src/entities", "migrationsDir": "src/migrations" }
+  "entities": ["dist/**/*.entity{.ts,.js}"],
+  "migrations": ["dist/migrations/**/*.js"],
+  "cli": { "entitiesDir": "src/entities", "migrationsDir": "src/migrations" },
+  "ssl": { "rejectUnauthorized": false, "sslmode": "require" },
+  "options": { "trustServerCertificate": true }
 }
