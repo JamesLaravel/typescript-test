@@ -6,7 +6,7 @@
   "author": "James",
   "license": "MIT",
   "scripts": {
-    "start:prod": "node dist/index",
+    "start:prod": "yarn clean && tsc && node /dist/index",
     "start:dev": "yarn clean && ts-node-dev ./src/index.ts --respawn --transpileOnly ",
     "dev": "yarn clean && ts-node-dev ./src/index.ts --respawn --transpileOnly ",
     "tsc": "tsc",
