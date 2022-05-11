@@ -141,4 +141,23 @@ export class UserController {
       });
     }
   }
+
+   //get loggedIn user details
+   @httpGet("/details", TYPES.authMiddleware)
+   async CurrentUser(
+     @request() req: Request & { user: User },
+     @response() res: Response
+   ) {
+     try {
+       const user = req.user;
+       return res.status(200).json({
+         message: "User current details",
+         data: user,
+       });
+     } catch (error) {
+       return res.status(500).json({
+         message: "An error occurred",
+       });
+     }
+   }
 }
